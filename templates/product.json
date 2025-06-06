@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": 7,
+            "product_show_cutline": true,
+            "show_rating": true,
+            "show_rating_count": false,
+            "padding_bottom": 20
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": 5,
+            "padding_bottom": 12
+          }
+        },
+        "variants": {
+          "type": "variant-selectors",
+          "settings": {
+            "option_size_swatch": 20,
+            "option_size_radio": 20,
+            "option_space": 20,
+            "padding_bottom": 20
+          }
+        },
+        "subscriptions": {
+          "type": "subscription",
+          "settings": {
+            "subscriptions_enable_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "show_quantity": true,
+            "padding_bottom": 20
+          }
+        },
+        "sizes-remaining": {
+          "type": "size-remaining",
+          "disabled": true,
+          "settings": {
+            "info_page": "",
+            "title": "",
+            "show_remaining": true,
+            "show_remaining_style": "low",
+            "countdown": 10,
+            "padding_bottom": 0
+          }
+        },
+        "buttons": {
+          "type": "add-buttons",
+          "settings": {
+            "enable_payment_button": true,
+            "enable_gift_card_recipient": true,
+            "padding_bottom": 0
+          }
+        },
+        "liquid_NReQTR": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"stylist-button-container\">\n  <button class=\"stylist-button\">\n   <a href=\"https://api.whatsapp.com/send?phone=&text=Chat%20with%20stylist\" target=\"_blank\">\n    CHAT WITH STYLIST\n  </a>\n  </button>\n</div>\n\n<style>\n.stylist-button {\n  background-color: #792c1c;\n  color: #fff;\n  padding: 16px 20px;\n font-size: calc(var(--font-3)* var(--TYPE-ADJUST-BUTTON));\nfont-weight:800 !important;\nletter-spacing:0.1rem;\n  border: none;\n  cursor: pointer;\n  margin-top: 15px;\n  display: block;\n  width: 100%;\n  text-align: center;\n  border-radius: 0;\n}\n\n.stylist-button:hover {\n  background-color: #792c1c;\n}\n\n</style>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "style": "accordions",
+            "enable_description": true,
+            "read_more": true,
+            "icon_description": "",
+            "description_expanded": true,
+            "title_1": "Style Tips",
+            "icon_name_1": "",
+            "raw_content_1": "<p>{{ product.metafields.custom.style_tips | metafield_tag }}</p>",
+            "title_2": "Return Policy",
+            "icon_name_2": "",
+            "raw_content_2": "<p>Eligible items can be returned or exchanged within 7 days of delivery, provided they are unused and in original condition with tags. Refunds are processed to the original payment method after the item is picked up or returned in-store.</p>",
+            "title_3": "",
+            "icon_name_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "icon_name_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": "",
+            "padding_bottom": 20
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "title": "Buy it with",
+            "upsell_type": "product_single",
+            "product": "",
+            "upsell_product_list": [],
+            "upsell_list_limit": 1,
+            "padding_bottom": 20
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "disabled": true,
+          "settings": {
+            "padding_bottom": 20
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share",
+            "target_device": "",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variants",
+        "subscriptions",
+        "quantity",
+        "sizes-remaining",
+        "buttons",
+        "liquid_NReQTR",
+        "description",
+        "upsell",
+        "pickup",
+        "sharing"
+      ],
+      "custom_css": [],
+      "settings": {
+        "layout": "none@columns",
+        "image_width": "wide",
+        "image_spacing": 10,
+        "align": "left",
+        "bg": "palette--light bg--neutral",
+        "mobile_layout": "carousel",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "alt_text_enable": true,
+        "alt_text_icon": "icon-ruler",
+        "product_breadcrumbs_enable": false,
+        "product_breadcrumbs_list": [],
+        "width": "wrapper",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "collection_split_UbPBhA": {
+      "type": "collection-split",
+      "disabled": true,
+      "settings": {
+        "collection": "",
+        "product_list": [],
+        "sticky_image_enable": true,
+        "swap": false,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "kicker": "Introducing",
+        "heading": "Featured products",
+        "text_color": "text--white",
+        "link_text": "View products",
+        "link": "",
+        "button_color": "btn--white",
+        "button_style": "btn",
+        "grid_large": 2,
+        "grid_small": 1.2,
+        "limit": 10,
+        "bg": "palette--light bg--neutral",
+        "object_position": "center-center",
+        "width": "wrapper--none",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related": {
+      "type": "related",
+      "settings": {
+        "heading": "You might also like",
+        "bg": "palette--light bg--neutral",
+        "grid_large": 4,
+        "grid_medium": 3,
+        "grid_small": 1.2,
+        "related_products_enable": true,
+        "limit": 6,
+        "product_recommendations_heading": "Related products",
+        "show_recently_viewed": true,
+        "product_recently_limit": 6,
+        "product_recently_minimum": 4,
+        "product_recently_heading": "Recently viewed",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_split_UbPBhA",
+    "related"
+  ]
+}

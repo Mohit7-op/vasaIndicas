@@ -1,0 +1,101 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_hero_tGmVGB": {
+      "type": "section-hero",
+      "blocks": {
+        "kicker_gVxy8z": {
+          "type": "kicker",
+          "settings": {
+            "kicker": "",
+            "enable_line": false,
+            "text_size": 4
+          }
+        },
+        "heading_GGfN3A": {
+          "type": "heading",
+          "settings": {
+            "title": "Vasaindicas Gift Cards",
+            "text_size": 10
+          }
+        },
+        "text_xTpXz3": {
+          "type": "text",
+          "settings": {
+            "richtext": "",
+            "text_size": 6
+          }
+        }
+      },
+      "block_order": [
+        "kicker_gVxy8z",
+        "heading_GGfN3A",
+        "text_xTpXz3"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/white-tablet-with-red-ribbon-sale-tags.jpg",
+        "height": "use_screen_two_thirds",
+        "overlay_opacity": 35,
+        "overlay_color": "#000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_collection_BqQWHg": {
+      "type": "section-collection",
+      "custom_css": [
+        ".money,.price {display: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "collection": "gift-cards",
+        "grid": 3,
+        "rows": 1,
+        "grid_mobile": "2",
+        "bg": "palette--light bg--neutral",
+        "show_view_all": false,
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_tGmVGB",
+    "section_collection_BqQWHg"
+  ]
+}

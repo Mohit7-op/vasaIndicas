@@ -1,0 +1,253 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": false,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "contact-block-kicker": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "<p>Introducing</p>",
+            "enable_line": false,
+            "text_size": 3
+          }
+        },
+        "contact-block-heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Partners",
+            "text_size": 10
+          }
+        }
+      },
+      "block_order": [
+        "contact-block-kicker",
+        "contact-block-heading"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/inner-banner.jpg",
+        "height": "use_screen_three_quarters",
+        "overlay_opacity": 30,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": true,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_icons_aKHAV6": {
+      "type": "section-icons",
+      "blocks": {
+        "icon_block_yCCLAy": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-basket-like",
+            "icon_color": "#aaaaaa",
+            "title": "Perfect Fit",
+            "text": "<p>We offer free alterations and custom tailoring to ensure a perfect fit for everyone.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "icon_block_HJtWm6": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-shipment-world",
+            "icon_color": "#aaaaaa",
+            "title": "Worldwide shipping",
+            "text": "<p>Ship anywhere, rates available at checkout.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "icon_block_MJcVWT": {
+          "type": "icon_block",
+          "settings": {
+            "icon_name": "icon-phone",
+            "icon_color": "#aaaaaa",
+            "title": "24/7 support",
+            "text": "<p>support@vasaindicas.com</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_block_yCCLAy",
+        "icon_block_HJtWm6",
+        "icon_block_MJcVWT"
+      ],
+      "settings": {
+        "title": "",
+        "bg": "palette--light bg--accent",
+        "icons_size": 30,
+        "icon_alignment": "icon--top",
+        "layout": "grid--stacked",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_richtext_hdH77R": {
+      "type": "section-richtext",
+      "blocks": {
+        "kicker_WiawqV": {
+          "type": "kicker",
+          "disabled": true,
+          "settings": {
+            "kicker": "Get In Touch",
+            "enable_line": true,
+            "text_size": 4
+          }
+        },
+        "heading_EFMfGB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Reach Out To Our Team",
+            "text_size": 8
+          }
+        }
+      },
+      "block_order": [
+        "kicker_WiawqV",
+        "heading_EFMfGB"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "content_width": 2000,
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact": {
+      "type": "section-contact",
+      "blocks": {
+        "text_8qnQJc": {
+          "type": "text",
+          "settings": {
+            "title": "Name"
+          }
+        },
+        "email": {
+          "type": "email",
+          "settings": {
+            "title": "Email"
+          }
+        },
+        "message": {
+          "type": "body",
+          "settings": {
+            "title": "Message"
+          }
+        }
+      },
+      "block_order": [
+        "text_8qnQJc",
+        "email",
+        "message"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "text-left",
+        "button_size": "btn--long",
+        "button_color": "btn--neutral",
+        "button_style": "btn--outline",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper--narrow",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1738234882c2d84630": {
+      "type": "apps",
+      "blocks": {
+        "hulk_form_builder_form_block_XFcJ8x": {
+          "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "hSz48NcTl_a4bHsPamnI-g",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_XFcJ8x"
+      ],
+      "settings": {
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero",
+    "section_icons_aKHAV6",
+    "section_richtext_hdH77R",
+    "contact",
+    "1738234882c2d84630"
+  ]
+}

@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "kicker": "",
+        "kicker_size": 3,
+        "show_title": true,
+        "title_size": 8,
+        "show_content": true,
+        "content_size": 5,
+        "align_text": "text-left",
+        "text_color": "text--neutral",
+        "bg": "palette--light bg--neutral",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_hero_38cDwM": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_9NEWyA": {
+          "type": "heading",
+          "settings": {
+            "title": "Store details",
+            "text_size": 10
+          }
+        }
+      },
+      "block_order": [
+        "heading_9NEWyA"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/women-8747913_1920.jpg",
+        "height": "use_screen_one_half",
+        "overlay_opacity": 50,
+        "overlay_color": "#000000",
+        "enable_overlay_text": false,
+        "preload_image": false,
+        "content_width": 2000,
+        "text_align": "align--middle-center",
+        "text_color": "text--white",
+        "color_bg": "hero__content--transparent",
+        "width": "wrapper--none",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "store_details_xVfmz7": {
+      "type": "StoreDetails",
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/dd816ec9888143d4af7b8a871197b99d.mp4",
+        "store_name": "VasaIndica",
+        "store_address": "Regency One, 1st Floor, 60-Feet Road, Chhattarpur Enclave, New Delhi, 110030",
+        "store_hours": "Monday – Sunday: 10am – 10pm",
+        "store_location": "#",
+        "store_call": "#",
+        "store_products_link": "shopify://collections/frontpage"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_38cDwM",
+    "store_details_xVfmz7"
+  ]
+}
