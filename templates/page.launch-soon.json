@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "kicker": "",
         "kicker_size": 3,
@@ -25,9 +26,310 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "count_down_XDp6cM": {
+      "type": "count-down",
+      "name": "count down",
+      "settings": {
+        "section_heading": "Countdown to Style",
+        "section_frame_desk": "shopify://shop_images/countdown_bg.gif",
+        "section_frame_mb": "shopify://shop_images/countdown_bg.gif",
+        "subscribe_text": "<p>Subscribers receive exclusive 24 hour early access to our most  anticipated “<strong>END OF SEASON SALE</strong>”</p>",
+        "subscribe_subtext": "Sale live from June 5th - June 25th, 2025"
+      }
+    },
+    "section_logos_Ppf3qL": {
+      "type": "section-logos",
+      "blocks": {
+        "logo_image_qMcVbh": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/9.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_kjJMiB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_2.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_cFG7Xt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/11.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_jpeYJb": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_kPGCqa": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/8.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_WUPRTp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/7.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_h3HwPc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_5.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_yxKBhw": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/13.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_RKqCpK": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_4.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_jQaeRa": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_WUYwJz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_qgVAnw": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/10.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_WhTiyB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_8HTWqj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/15.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_DJVfHm": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_YAVKCD": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_hqQcEB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_3.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_YtmkKE": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_NFmYjp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_UzNWKB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/14.png",
+            "link": "",
+            "new_tab": true,
+            "width": 120,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_qMcVbh",
+        "logo_image_kjJMiB",
+        "logo_image_cFG7Xt",
+        "logo_image_jpeYJb",
+        "logo_image_kPGCqa",
+        "logo_image_WUPRTp",
+        "logo_image_h3HwPc",
+        "logo_image_yxKBhw",
+        "logo_image_RKqCpK",
+        "logo_image_jQaeRa",
+        "logo_image_WUYwJz",
+        "logo_image_qgVAnw",
+        "logo_image_WhTiyB",
+        "logo_image_8HTWqj",
+        "logo_image_DJVfHm",
+        "logo_image_YAVKCD",
+        "logo_image_hqQcEB",
+        "logo_image_YtmkKE",
+        "logo_image_NFmYjp",
+        "logo_image_UzNWKB"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "60+ Designers Under One Roof",
+        "section_bg": "#57152d",
+        "bg": "palette--light bg--neutral",
+        "enable_marquee": true,
+        "marquee_speed": 30,
+        "width": "wrapper--none",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "social_media_soon_awxNnc": {
+      "type": "social-media-soon",
+      "blocks": {
+        "content_KHF44a": {
+          "type": "content",
+          "settings": {
+            "social_media_link": "/",
+            "btn_img": "shopify://shop_images/social-media-whatsapp.png"
+          }
+        },
+        "content_THmHbC": {
+          "type": "content",
+          "settings": {
+            "social_media_link": "https://www.instagram.com/vasaindica/",
+            "btn_img": "shopify://shop_images/social-media-instagram.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_KHF44a",
+        "content_THmHbC"
+      ],
+      "name": "social media",
+      "settings": {
+        "section_heading": "Social Media",
+        "btn_url": "shopify://pages/contact",
+        "btn_text": "Partnership"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "count_down_XDp6cM",
+    "section_logos_Ppf3qL",
+    "social_media_soon_awxNnc"
   ]
 }

@@ -1,0 +1,68 @@
+<div class="social_media_soon vs-mb-[30px]">
+  <div class="section_heading">
+    <h2 class="section_heading vs-mb-[25px] vs-font-bold vs-text-[18px] vs-capitalize vs-text-[#57152D] vs-tracking-[0.5px] vs-text-center md:vs-text-5xl md:vs-mb-[50px]">
+      {{ section.settings.section_heading }}
+    </h2>
+  </div>
+  <div class="section_content vs-flex vs-justify-center vs-gap-[5px] md:vs-gap-[20px]">
+    {% for block in section.blocks %}
+      <div class="social_media_cubes vs-bg-[#E5E5E54D] vs-bg-opacity-30 vs-rounded-[1px] vs-border-black vs-border-[0.33px] md:vs-rounded-[2px]">
+        <a href="{{ block.settings.social_media_link }}" class="block vs-py-2 vs-px-3 md:vs-px-4">
+          {{ block.settings.btn_img | image_url: width: auto, height: auto | image_tag: class: 'vs-w-[100px]' }}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="partership_btn vs-mt-6 vs-flex vs-justify-center">
+    <a href="{{ section.settings.btn_url }}" class="vs-flex vs-justify-center vs-items-center vs-w-[100px] vs-h-[32px] vs-bg-[#57152D] vs-rounded-[3px] vs-text-white vs-text-sm hover:vs-text-white md:vs-text-lg md:vs-w-[200px] md:vs-h-[56px]">
+    {{ section.settings.btn_text }}
+    </a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "social media",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button url"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content",
+      "name": "content",
+      "settings": [
+        {
+          "type": "url",
+          "id": "social_media_link",
+          "label": "Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "btn_img",
+          "label": "Social media icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "social media",
+      "category": "social media"
+    }
+  ]
+}
+{% endschema %}
