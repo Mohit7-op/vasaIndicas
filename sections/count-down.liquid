@@ -1,0 +1,212 @@
+<script src="{{ 'count-down.js' | asset_url }}" defer="defer"></script>
+
+<div class="vs-relative">
+  <div class="section_bg_content vs-blur-[2px]">
+    <div class="section_bg_mb vs-block md:vs-hidden vs-h-[415px] overflow-hidden">
+      {{
+        section.settings.section_frame_mb
+        | image_url: width: 800
+        | image_tag: class: 'section_frame vs-w-full vs-h-full object-cover'
+      }}
+    </div>
+
+    <div class="section_bg_desk vs-hidden vs-h-[890px] overflow-hidden md:vs-block ">
+      {{
+        section.settings.section_frame_desk
+        | image_url: width: 1600
+        | image_tag: class: 'section_frame vs-w-full vs-h-full object-cover'
+      }}
+    </div>
+  </div>
+
+  <div class="section_content vs-absolute vs-top-[200px] vs-left-1/2 vs-translate-x-[-50%] vs-translate-y-[-50%] vs-transform vs-text-black md:vs-flex md:vs-flex-col md:vs-items-center md:vs-top-[400px]">
+    <div class="section_content_heading vs-mb-[25px] md:vs-mb-[50px]">
+      <h2 class="vs-text-[20px] vs-tracking-[0.5px] vs-whitespace-nowrap md:vs-text-[64px]">
+        {{ section.settings.section_heading }}
+      </h2>
+    </div>
+
+    <div
+      id="countdown-timer"
+      data-year="{{ section.settings.countdown_year }}"
+      data-month="{{ section.settings.countdown_month }}"
+      data-day="{{ section.settings.countdown_day }}"
+      data-time="{{ section.settings.countdown_time }}"
+      class="section_content_countdown vs-flex vs-gap-[5px] vs-mb-[25px] md:vs-mb-[50px] md:vs-gap-[10px]"
+    >
+      <div class="day vs-flex vs-gap-[5px] vs-flex-col vs-items-center md:vs-gap-[20px]">
+        <span class="vs-w-[65px] vs-h-[65px] vs-flex vs-items-center vs-justify-center vs-bg-[#ECEEED] vs-rounded-[3px] vs-text-[36px] vs-leading-[100%] vs-tracking-[0px] vs-text-[#57152D] md:vs-w-[200px] md:vs-h-[200px] md:vs-text-[96px] md:vs-rounded-[8px]"
+          >00</span
+        >
+        <span class="vs-font-bold vs-text-[12px] vs-leading-[100%] vs-tracking-[0px] vs-text-center vs-uppercase harmonia-bold md:vs-text-[24px]"
+          >Days</span
+        >
+      </div>
+      <div class="hours vs-flex vs-gap-[5px] vs-flex-col md:vs-gap-[20px]">
+        <span class="vs-w-[65px] vs-h-[65px] vs-flex vs-items-center vs-justify-center vs-bg-[#ECEEED] vs-rounded-[3px] vs-text-[36px] vs-leading-[100%] vs-tracking-[0px] vs-text-[#57152D] md:vs-w-[200px] md:vs-h-[200px] md:vs-text-[96px] md:vs-rounded-[8px]"
+          >00</span
+        >
+        <span class="vs-font-bold vs-text-[12px] vs-leading-[100%] vs-tracking-[0px] vs-text-center vs-uppercase harmonia-bold md:vs-text-[24px]"
+          >Hours</span
+        >
+      </div>
+      <div class="minutes vs-flex vs-gap-[5px] vs-flex-col md:vs-gap-[20px]">
+        <span class="vs-w-[65px] vs-h-[65px] vs-flex vs-items-center vs-justify-center vs-bg-[#ECEEED] vs-rounded-[3px] vs-text-[36px] vs-leading-[100%] vs-tracking-[0px] vs-text-[#57152D] md:vs-w-[200px] md:vs-h-[200px] md:vs-text-[96px] md:vs-rounded-[8px]"
+          >00</span
+        >
+        <span class="vs-font-bold vs-text-[12px] vs-leading-[100%] vs-tracking-[0px] vs-text-center vs-uppercase harmonia-bold md:vs-text-[24px]"
+          >Minutes</span
+        >
+      </div>
+      <div class="seconds vs-flex vs-gap-[5px] vs-flex-col md:vs-gap-[20px]">
+        <span class="vs-w-[65px] vs-h-[65px] vs-flex vs-items-center vs-justify-center vs-bg-[#ECEEED] vs-rounded-[3px] vs-text-[36px] vs-leading-[100%] vs-tracking-[0px] vs-text-[#57152D] md:vs-w-[200px] md:vs-h-[200px] md:vs-text-[96px] md:vs-rounded-[8px]"
+          >00</span
+        >
+        <span class="vs-font-bold vs-text-[12px] vs-leading-[100%] vs-tracking-[0px] vs-text-center vs-uppercase harmonia-bold md:vs-text-[24px]"
+          >Seconds</span
+        >
+      </div>
+    </div>
+
+    <div class="section_content_subscribe vs-flex vs-flex-col vs-gap-[25px] md:vs-gap-[50px]">
+      <div class="section_content_para vs-leading-[20px] vs-tracking-[0.5px] vs-text-center vs-text-[14px] vs-text-balance md:vs-text-[24px] md:vs-leading-10 md:vs-max-w-[690px] md:vs-text-pretty">
+        {{ section.settings.subscribe_text }}
+      </div>
+      <div class="section_content_field vs-flex vs-items-center vs-justify-center">
+        <div class="vs-flex vs-items-center vs-gap-[10px] md:vs-max-w-[690px] md:vs-w-full md:vs-gap-[20px]">
+          {%- assign formid = 'newsletter_form_' | append: section.id -%}
+          {% form 'customer',
+            id: formid,
+            novalidate: 'novalidate',
+            class: 'vs-flex vs-items-center vs-gap-[10px] md:vs-max-w-[690px] md:vs-w-full md:vs-gap-[20px]'
+          %}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+
+            <input
+              type="email"
+              name="contact[email]"
+              id="{{ formid }}-email"
+              class="!vs-mb-0 vs-rounded-[3px] vs-py-[16px] vs-px-[12px] !vs-border-[0.5px] !vs-border-black vs-h-[32px] vs-placeholder-[#000000] vs-placeholder:text-sm md:vs-px-[24px] md:vs-h-[56px] md:vs-placeholder:text-lg"
+              placeholder="Enter your email"
+              aria-label="Enter your email"
+              autocorrect="off"
+              autocapitalize="off"
+              aria-required="true"
+              {% if form.errors %}
+                aria-invalid="true"
+                aria-describedby="{{ formid }}-email-error"
+                data-form-status
+              {% endif %}
+              value="{{ form.email }}"
+            >
+
+            <button
+              type="submit"
+              class="vs-rounded-[3px] vs-py-[12px] vs-px-[20px] vs-bg-[#57152D] vs-text-white vs-flex vs-justify-center vs-items-center vs-h-[32px] md:vs-py-[16px] md:vs-px-[24px] md:vs-h-[56px] md:vs-w-[200px]"
+              name="commit"
+              id="subscribe-button"
+            >
+              Notify Me
+            </button>
+
+            {%- if form.posted_successfully? -%}
+              <p class="vs-text-center vs-mt-2 vs-text-sm vs-text-green-600" tabindex="-1" data-form-status>
+                {{ 'general.newsletter_form.subscribed' | t: default: 'Thank you for joining our mailing list!' }}
+              </p>
+            {%- endif -%}
+
+            {% if form.errors %}
+              {% assign email_error_message = form.errors.messages.email | downcase %}
+
+              {% if email_error_message contains 'already subscribed' or email_error_message contains 'pending' %}
+                <div
+                  id="{{ formid }}-email-error"
+                  class="vs-text-center vs-mt-2 vs-text-sm vs-text-yellow-600"
+                  role="alert"
+                >
+                  {{
+                    'general.newsletter_form.error_message'
+                    | t: default: 'You are already subscribed or your request is pending.'
+                  }}
+                </div>
+              {% else %}
+                <div
+                  id="{{ formid }}-email-error"
+                  class="vs-text-center vs-mt-2 vs-text-sm vs-text-red-600"
+                  role="alert"
+                >
+                  {{ form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email }}
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endform %}
+        </div>
+      </div>
+      <div class="section_content_description">
+        <p class="vs-text-[14px] vs-leading-[100%] vs-tracking-[0.5px] vs-text-center md:vs-text-[24px]">
+          {{ section.settings.subscribe_subtext }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "count down",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_frame_desk",
+      "label": "Bg Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "section_frame_mb",
+      "label": "Bg Image Mobile"
+    },
+    {
+      "type": "richtext",
+      "id": "subscribe_text",
+      "label": "Subscribe Text"
+    },
+    {
+      "type": "text",
+      "id": "subscribe_subtext",
+      "label": "Subscribe Subtext"
+    },
+    {
+      "type": "text",
+      "id": "countdown_year",
+      "label": "Countdown Year (e.g. 2025)"
+    },
+    {
+      "type": "text",
+      "id": "countdown_month",
+      "label": "Countdown Month (01-12)"
+    },
+    {
+      "type": "text",
+      "id": "countdown_day",
+      "label": "Countdown Day (01-31)"
+    },
+    {
+      "type": "text",
+      "id": "countdown_time",
+      "label": "Countdown Time (24hr format: HH:MM:SS)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "count down",
+      "category": "sale"
+    }
+  ]
+}
+{% endschema %}

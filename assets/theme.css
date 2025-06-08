@@ -12458,6 +12458,9 @@ html:not(.no-js) body:not(.focus-enabled) *:focus {
 .text__standard {
   --cta-column-gap: 8px;
 }
+.section_heading{
+  font-family: var(--TYPE-STACK-KICKER);
+}
 .kicker-flourished {
   font-family: var(--TYPE-STACK-KICKER);
   font-style: var(--TYPE-STYLE-KICKER);
@@ -25186,3 +25189,28 @@ border:1px solid #792c1c;
 .shopify-payment-button .shopify-payment-button__button--unbranded:hover:not([disabled]){
   color:#792c1c !important;
 }
+
+/* CUSTOM FONT (START)  */
+
+@font-face {
+  font-family: 'Harmonia Sans Bold';
+  src: url('https://cdn.shopify.com/s/files/1/0731/7818/5984/files/Harmonia_Sans_W01_Bold.woff2?v=1749281097') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.harmonia-bold{
+  font-family: 'Harmonia Sans Bold';
+}
+
+/* CUSTOM FONT (END)  */
+
+/* COUNT DOWN PAGE (START) */
+
+.section_content_para strong{
+  font-family: 'Harmonia Sans Bold';
+}
+
+/* COUNT DOWN PAGE (END) */
+
