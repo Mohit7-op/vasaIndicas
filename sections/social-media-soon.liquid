@@ -1,22 +1,53 @@
-<div class="social_media_soon vs-mb-[30px]">
-  <div class="section_heading">
-    <h2 class="section_heading vs-mb-[25px] vs-font-bold vs-text-[18px] vs-capitalize vs-text-[#57152D] vs-tracking-[0.5px] vs-text-center md:vs-text-5xl md:vs-mb-[50px]">
-      {{ section.settings.section_heading }}
-    </h2>
-  </div>
-  <div class="section_content vs-flex vs-justify-center vs-gap-[5px] md:vs-gap-[20px]">
-    {% for block in section.blocks %}
-      <div class="social_media_cubes vs-bg-[#E5E5E54D] vs-bg-opacity-30 vs-rounded-[1px] vs-border-black vs-border-[0.33px] md:vs-rounded-[2px]">
-        <a href="{{ block.settings.social_media_link }}" class="block vs-py-2 vs-px-3 md:vs-px-4">
-          {{ block.settings.btn_img | image_url: width: auto, height: auto | image_tag: class: 'vs-w-[100px]' }}
-        </a>
-      </div>
-    {% endfor %}
-  </div>
-  <div class="partership_btn vs-mt-6 vs-flex vs-justify-center">
-    <a href="{{ section.settings.btn_url }}" class="vs-flex vs-justify-center vs-items-center vs-w-[100px] vs-h-[32px] vs-bg-[#57152D] vs-rounded-[3px] vs-text-white vs-text-sm hover:vs-text-white md:vs-text-lg md:vs-w-[200px] md:vs-h-[56px]">
-    {{ section.settings.btn_text }}
-    </a>
+{% stylesheet %}
+  .social_media_soon {
+    --padding-top_mb: var(--PTM);
+    --padding-bottom_mb: var(--PBM);
+    padding-top: var(--padding-top_mb);
+    padding-bottom: var(--padding-bottom_mb);
+  }
+  @media screen and (min-width: 768px) {
+    .social_media_soon {
+      --padding-top: var(--PT);
+      --padding-bottom: var(--PB);
+      padding-top: var(--padding-top);
+      padding-bottom: var(--padding-bottom);
+    }
+  }
+{% endstylesheet %}
+
+<div style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;--PTM: {{ section.settings.padding_top_mb }}px; --PBM: {{ section.settings.padding_bottom_mb }}px;">
+  <div
+    class="social_media_soon"
+  >
+    <div class="section_heading">
+      <h2 class="section_heading vs-mb-[25px] vs-font-bold vs-text-[18px] vs-capitalize vs-text-[#57152D] vs-tracking-[0.5px] vs-text-center md:vs-text-5xl md:vs-mb-[50px]">
+        {{ section.settings.section_heading }}
+      </h2>
+    </div>
+    <div class="section_content vs-flex vs-justify-center vs-gap-[5px] md:vs-gap-[20px]">
+      {% for block in section.blocks %}
+        <div class="social_media_cubes vs-w-[86px] vs-bg-[#E5E5E54D] vs-bg-opacity-30 vs-rounded-[1px] vs-border-black vs-border-[0.33px] md:vs-rounded-[2px] md:vs-w-[195px]">
+          <a
+            href="{{ block.settings.social_media_link }}"
+            class="vs-flex vs-justify-center vs-items-center vs-py-2 vs-px-2 md:vs-px-4 md:vs-h-full"
+          >
+            {{
+              block.settings.btn_img
+              | image_url: width: auto, height: auto
+              | image_tag: class: 'vs-w-[70px] md:vs-w-[138px]'
+            }}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="partership_btn vs-mt-[25px] vs-flex vs-justify-center md:vs-mt-[50px]">
+      <a
+        href="{{ section.settings.btn_url }}"
+        class="vs-flex vs-justify-center vs-items-center vs-w-[100px] vs-h-[32px] vs-bg-[#57152D] vs-rounded-[3px] vs-text-white vs-text-sm hover:vs-text-white md:vs-text-lg md:vs-w-[200px] md:vs-h-[56px]"
+      >
+        {{ section.settings.btn_text }}
+      </a>
+    </div>
   </div>
 </div>
 
@@ -38,6 +69,46 @@
       "type": "text",
       "id": "btn_text",
       "label": "text"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top mobile",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom mobile",
+      "default": 50
     }
   ],
   "blocks": [

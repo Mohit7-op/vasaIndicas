@@ -562,6 +562,10 @@ video {
   position: relative;
 }
 
+.vs-inset-0 {
+  inset: 0px;
+}
+
 .vs-left-1\/2 {
   left: 50%;
 }
@@ -578,16 +582,12 @@ video {
   margin-bottom: 25px;
 }
 
-.vs-mb-\[30px\] {
-  margin-bottom: 30px;
-}
-
-.vs-mt-6 {
-  margin-top: 1.5rem;
-}
-
 .vs-mt-2 {
   margin-top: 0.5rem;
+}
+
+.vs-mt-\[25px\] {
+  margin-top: 25px;
 }
 
 .vs-block {
@@ -600,14 +600,6 @@ video {
 
 .vs-hidden {
   display: none;
-}
-
-.vs-aspect-\[1600\/890\] {
-  aspect-ratio: 1600/890;
-}
-
-.vs-aspect-\[800\/415\] {
-  aspect-ratio: 800/415;
 }
 
 .vs-h-\[32px\] {
@@ -636,6 +628,14 @@ video {
 
 .vs-w-\[65px\] {
   width: 65px;
+}
+
+.vs-w-\[70px\] {
+  width: 70px;
+}
+
+.vs-w-\[86px\] {
+  width: 86px;
 }
 
 .vs-w-full {
@@ -728,13 +728,18 @@ video {
   background-color: rgb(236 238 237 / var(--tw-bg-opacity, 1));
 }
 
+.vs-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .vs-bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
 
-.vs-px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.vs-px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .vs-px-\[12px\] {
@@ -829,11 +834,6 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
-.vs-text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .vs-text-green-600 {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
@@ -842,6 +842,11 @@ video {
 .vs-text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}
+
+.vs-text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .vs-text-yellow-600 {
@@ -857,6 +862,10 @@ video {
 .vs-placeholder-\[\#000000\]::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(0 0 0 / var(--tw-placeholder-opacity, 1));
+}
+
+.vs-opacity-60 {
+  opacity: 0.6;
 }
 
 .vs-blur-\[2px\] {
@@ -882,6 +891,10 @@ video {
     margin-bottom: 50px;
   }
 
+  .md\:vs-mt-\[50px\] {
+    margin-top: 50px;
+  }
+
   .md\:vs-block {
     display: block;
   }
@@ -900,6 +913,18 @@ video {
 
   .md\:vs-h-\[56px\] {
     height: 56px;
+  }
+
+  .md\:vs-h-full {
+    height: 100%;
+  }
+
+  .md\:vs-w-\[138px\] {
+    width: 138px;
+  }
+
+  .md\:vs-w-\[195px\] {
+    width: 195px;
   }
 
   .md\:vs-w-\[200px\] {
