@@ -35,7 +35,11 @@
         "section_frame_desk": "shopify://shop_images/countdown_bg.gif",
         "section_frame_mb": "shopify://shop_images/countdown_bg.gif",
         "subscribe_text": "<p>Subscribers receive exclusive 24 hour early access to our most  anticipated “<strong>END OF SEASON SALE</strong>”</p>",
-        "subscribe_subtext": "Sale live from June 5th - June 25th, 2025"
+        "subscribe_subtext": "Sale live from June 5th - June 25th, 2025",
+        "countdown_year": "2025",
+        "countdown_month": "06",
+        "countdown_day": "20",
+        "countdown_time": "23:59:59"
       }
     },
     "section_logos_Ppf3qL": {
@@ -47,7 +51,7 @@
             "image": "shopify://shop_images/9.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -58,7 +62,7 @@
             "image": "shopify://shop_images/LOGO_2.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -69,7 +73,7 @@
             "image": "shopify://shop_images/11.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -80,7 +84,7 @@
             "image": "shopify://shop_images/4.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -91,7 +95,7 @@
             "image": "shopify://shop_images/8.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -102,7 +106,7 @@
             "image": "shopify://shop_images/7.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -113,7 +117,7 @@
             "image": "shopify://shop_images/LOGO_5.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -124,7 +128,7 @@
             "image": "shopify://shop_images/13.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -135,7 +139,7 @@
             "image": "shopify://shop_images/LOGO_4.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -146,7 +150,7 @@
             "image": "shopify://shop_images/LOGO_1.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -157,7 +161,7 @@
             "image": "shopify://shop_images/6.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -168,7 +172,7 @@
             "image": "shopify://shop_images/10.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -179,7 +183,7 @@
             "image": "shopify://shop_images/1.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -190,7 +194,7 @@
             "image": "shopify://shop_images/15.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -201,7 +205,7 @@
             "image": "shopify://shop_images/5.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -212,7 +216,7 @@
             "image": "shopify://shop_images/12.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -223,7 +227,7 @@
             "image": "shopify://shop_images/LOGO_3.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -234,7 +238,7 @@
             "image": "shopify://shop_images/3.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -245,7 +249,7 @@
             "image": "shopify://shop_images/2.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -256,7 +260,7 @@
             "image": "shopify://shop_images/14.png",
             "link": "",
             "new_tab": true,
-            "width": 120,
+            "width": 150,
             "width_desk": 200,
             "spacing": 0
           }
@@ -292,8 +296,10 @@
         "enable_marquee": true,
         "marquee_speed": 30,
         "width": "wrapper--none",
-        "padding_top": 50,
-        "padding_bottom": 50
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mb": 50,
+        "padding_bottom_mb": 50
       }
     },
     "social_media_soon_awxNnc": {
@@ -302,7 +308,7 @@
         "content_KHF44a": {
           "type": "content",
           "settings": {
-            "social_media_link": "/",
+            "social_media_link": "https://wa.me/919717770551",
             "btn_img": "shopify://shop_images/social-media-whatsapp.png"
           }
         },

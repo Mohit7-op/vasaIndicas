@@ -8,65 +8,79 @@
   {% assign is_product_or_collection = true %}
 {% endif %}
 
+{% stylesheet %}
+  .logo-bar__image {
+    width: var(--logo-width);
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .section-padding {
+      --padding-top: calc(var(--PTM));
+      --padding-bottom: calc(var(--PBM));
+    }
+  }
+
+  @media (min-width: 768px) {
+    .logo-bar__image {
+      width: var(--logo-width-desk);
+    }
+  }
+{% endstylesheet %}
+
 {% capture logo_markup %}
   {% for block in section.blocks %}
     <div class="logo-bar__item{% if is_product_or_collection and block.settings.image == blank %} hide{% endif %}"
-      style="--gutter: {{ block.settings.spacing }}px; --width: {{ block.settings.width }}px;"
+      style="--gutter: {{ block.settings.spacing }}px; --logo-width: {{ block.settings.width }}px; --logo-width-desk: {{ block.settings.width_desk }}px;"
       data-slide="{{ block.id }}"
       data-slide-index="{{ forloop.index0 }}"
       {{ block.shopify_attributes }}>
-        {% if block.settings.link != blank %}
-          <a
-            href="{{ block.settings.link }}"
-            class="logo-bar__link"
-            {% if block.settings.new_tab %}target="_blank" rel="noopener"{% endif %}
-            title="{{ block.settings.link }}"
-          >
-        {% endif %}
+      
+      {% if block.settings.link != blank %}
+        <a
+          href="{{ block.settings.link }}"
+          class="logo-bar__link"
+          {% if block.settings.new_tab %}target="_blank" rel="noopener"{% endif %}
+          title="{{ block.settings.link }}"
+        >
+      {% endif %}
 
-       {% if block.settings.image != blank %}
-  {% assign has_block_with_image = true %}
-  {%- assign image_width = block.settings.image.width | at_most: block.settings.width %}
-  {%- assign image_width_2x = image_width | times: 2 %}
+      {% if block.settings.image != blank %}
+        {% assign has_block_with_image = true %}
+        {% assign image_width = block.settings.image.width | at_most: block.settings.width %}
+        {% assign image_width_2x = image_width | times: 2 %}
 
-  {% capture srcset %}
-    {{ block.settings.image | image_url: width: image_width_2x }} 2x,
-    {{ block.settings.image | image_url: width: image_width }}
-  {% endcapture %}
+        {% capture srcset %}
+          {{ block.settings.image | image_url: width: image_width_2x }} 2x,
+          {{ block.settings.image | image_url: width: image_width }}
+        {% endcapture %}
 
-  <style>
-    @media (min-width: 768px) {
-      [data-logo-id="{{ block.id }}"] .logo-bar__image {
-        width: {{ block.settings.width_desk }}px !important;
-      }
-    }
-  </style>
+        <div class="logo-bar__image-wrapper">
+          <div class="logo-bar__image">
+            {% render 'image',
+              cover: true,
+              img_object: block.settings.image,
+              srcset: srcset,
+              width: image_width
+            %}
+          </div>
+        </div>
+      {% else %}
+        {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
 
-  <div data-logo-id="{{ block.id }}">
-    <div class="logo-bar__image" style="width: {{ block.settings.width }}px;">
-      {% render 'image',
-        cover: true,
-        img_object: block.settings.image,
-        srcset: srcset,
-        width: image_width
-      %} 
-    </div>
-  </div>
-{% else %}
-  {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
-{% endif %}
-
-
-        {% if block.settings.link != blank %}
-          </a>
-        {% endif %}
+      {% if block.settings.link != blank %}
+        </a>
+      {% endif %}
     </div>
   {% endfor %}
 {% endcapture %}
 
 <div
   class="section-logos {{ section.settings.bg }}{% if section.settings.title != blank %} section-logos--tall{% endif %}{% if is_product_or_collection and has_block_with_image == false and request.design_mode == false %} hide{% endif %}"
-  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px; "
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;--PTM: {{ section.settings.padding_top_mb }}px; --PBM: {{ section.settings.padding_bottom_mb }}px;"
   data-section-id="{{ section.id }}"
   data-section-type="logos"
 >
@@ -199,6 +213,26 @@
       "step": 2,
       "unit": "px",
       "label": "Padding bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top mobile",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom mobile",
       "default": 36
     }
   ],

@@ -1,8 +1,10 @@
 <script src="{{ 'count-down.js' | asset_url }}" defer="defer"></script>
 
 <div class="vs-relative">
-  <div class="section_bg_content vs-blur-[2px]">
-    <div class="section_bg_mb vs-block md:vs-hidden vs-h-[415px] overflow-hidden">
+  <div class="section_bg_content vs-relative vs-blur-[2px]">
+    <div class="vs-absolute vs-inset-0 vs-bg-white vs-opacity-60 z-10"></div>
+
+    <div class="section_bg_mb vs-block md:vs-hidden vs-h-[415px] overflow-hidden z-0">
       {{
         section.settings.section_frame_mb
         | image_url: width: 800
@@ -10,7 +12,7 @@
       }}
     </div>
 
-    <div class="section_bg_desk vs-hidden vs-h-[890px] overflow-hidden md:vs-block ">
+    <div class="section_bg_desk vs-hidden vs-h-[890px] overflow-hidden md:vs-block z-0">
       {{
         section.settings.section_frame_desk
         | image_url: width: 1600
