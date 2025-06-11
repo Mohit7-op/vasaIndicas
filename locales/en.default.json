@@ -32,7 +32,8 @@
       "newsletter_email": "your-email@example.com",
       "submit": "Join",
       "subscribed": "Thank you for joining our mailing list!",
-      "error_message": "This customer is already subscribed"
+      "error_message": "This customer is already subscribed",
+      "subscribed_popup" : "Please check your inbox to confirm your subscription. Once confirmed, you’ll start receiving our latest updates, offers, and early access to exclusive drops."
     },
     "accessibility": {
       "menu": "Menu",

@@ -83,7 +83,6 @@
             class: 'vs-flex vs-items-center vs-gap-[10px] md:vs-max-w-[690px] md:vs-w-full md:vs-gap-[20px]'
           %}
             <input type="hidden" name="contact[tags]" value="newsletter">
-
             <input
               type="email"
               name="contact[email]"
@@ -112,14 +111,37 @@
             </button>
 
             {%- if form.posted_successfully? -%}
-              <p class="vs-text-center vs-mt-2 vs-text-sm vs-text-green-600" tabindex="-1" data-form-status>
-                {{ 'general.newsletter_form.subscribed' | t: default: 'Thank you for joining our mailing list!' }}
-              </p>
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  var popup = document.getElementById('newsletter-success-popup');
+
+                  if (popup) {
+                    // Show the popup
+                    popup.classList.remove('vs-hidden');
+
+                    // Close when clicking on the overlay (but not the modal content)
+                    popup.addEventListener('click', function (event) {
+                      if (event.target === popup) {
+                        popup.classList.add('vs-hidden');
+                      }
+                    });
+
+                    // Clean up URL so popup doesn't show on page refresh
+                    if (window.history.replaceState) {
+                      const url = new URL(window.location.href);
+                      url.searchParams.delete('customer_posted');
+                      if (url.hash.includes('newsletter_form')) {
+                        url.hash = '';
+                      }
+                      window.history.replaceState({}, document.title, url.toString());
+                    }
+                  }
+                });
+              </script>
             {%- endif -%}
 
             {% if form.errors %}
               {% assign email_error_message = form.errors.messages.email | downcase %}
-
               {% if email_error_message contains 'already subscribed' or email_error_message contains 'pending' %}
                 <div
                   id="{{ formid }}-email-error"
@@ -151,6 +173,24 @@
         </p>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- ✅ Success Popup Modal -->
+<div
+  id="newsletter-success-popup"
+  class="vs-hidden vs-fixed vs-inset-0 vs-flex vs-items-center vs-justify-center vs-bg-black/50 vs-z-50"
+>
+  <div class="vs-bg-white vs-rounded-[8px] vs-p-[20px] vs-text-center vs-max-w-[400px] vs-shadow-lg vs-mx-2">
+    <p class="vs-text-black vs-text-lg vs-font-bold vs-mb-4">
+      {{ 'general.newsletter_form.subscribed_popup' | t: default: 'Thank you for joining our mailing list!' }}
+    </p>
+    <button
+      class="vs-bg-[#57152D] vs-text-white vs-px-4 vs-py-2 vs-rounded"
+      onclick="document.getElementById('newsletter-success-popup').classList.add('vs-hidden')"
+    >
+      Close
+    </button>
   </div>
 </div>
 

@@ -53,6 +53,7 @@
         "image_gwY6tM",
         "image_qPtNWN"
       ],
+      "disabled": true,
       "settings": {
         "autoplay": true,
         "autoplay_speed": 8,
@@ -131,6 +132,314 @@
         "width": "wrapper--none",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "count_down_NqHXka": {
+      "type": "count-down",
+      "name": "count down",
+      "settings": {
+        "section_heading": "Countdown to Style",
+        "section_frame_desk": "shopify://shop_images/countdown_bg.gif",
+        "section_frame_mb": "shopify://shop_images/countdown_bg.gif",
+        "subscribe_text": "<p>Subscribers receive exclusive 24 hour early access to our most  anticipated “<strong>END OF SEASON SALE</strong>”</p>",
+        "subscribe_subtext": "Sale live from June 5th - June 25th, 2025",
+        "countdown_year": "2025",
+        "countdown_month": "06",
+        "countdown_day": "20",
+        "countdown_time": "23:59:59"
+      }
+    },
+    "section_logos_t9R4yA": {
+      "type": "section-logos",
+      "blocks": {
+        "logo_image_kz49J4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/9.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_bB6NDd": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_2.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_YbVtNU": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/11.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_PzNMNM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_JMYnG3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/8.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_rwNrqV": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/7.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_DFanTF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_5.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_TetHWk": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/13.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_4xcepY": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_4.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_igfCt4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_UVtjNi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_MV7R3V": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/10.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_WVrQK8": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_tKLDLq": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/15.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_Mzc3BL": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_qGzpn3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/12.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_t6gPQ7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/LOGO_3.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_43pQUY": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_FFpRTA": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        },
+        "logo_image_KqBG8V": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/14.png",
+            "link": "",
+            "new_tab": true,
+            "width": 150,
+            "width_desk": 200,
+            "spacing": 0
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_kz49J4",
+        "logo_image_bB6NDd",
+        "logo_image_YbVtNU",
+        "logo_image_PzNMNM",
+        "logo_image_JMYnG3",
+        "logo_image_rwNrqV",
+        "logo_image_DFanTF",
+        "logo_image_TetHWk",
+        "logo_image_4xcepY",
+        "logo_image_igfCt4",
+        "logo_image_UVtjNi",
+        "logo_image_MV7R3V",
+        "logo_image_WVrQK8",
+        "logo_image_tKLDLq",
+        "logo_image_Mzc3BL",
+        "logo_image_qGzpn3",
+        "logo_image_t6gPQ7",
+        "logo_image_43pQUY",
+        "logo_image_FFpRTA",
+        "logo_image_KqBG8V"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "60+ Designers Under One Roof",
+        "section_bg": "#57152d",
+        "bg": "palette--light bg--neutral",
+        "enable_marquee": true,
+        "marquee_speed": 30,
+        "width": "wrapper--none",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mb": 50,
+        "padding_bottom_mb": 50
+      }
+    },
+    "social_media_soon_CMGyx4": {
+      "type": "social-media-soon",
+      "blocks": {
+        "content_XGnqcK": {
+          "type": "content",
+          "settings": {
+            "social_media_link": "https://wa.me/919717770551",
+            "btn_img": "shopify://shop_images/social-media-whatsapp.png"
+          }
+        },
+        "content_wBAr6X": {
+          "type": "content",
+          "settings": {
+            "social_media_link": "https://www.instagram.com/vasaindica/",
+            "btn_img": "shopify://shop_images/social-media-instagram.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_XGnqcK",
+        "content_wBAr6X"
+      ],
+      "name": "social media",
+      "settings": {
+        "section_heading": "Social Media",
+        "btn_url": "shopify://pages/contact",
+        "btn_text": "Partnership",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 50
       }
     },
     "tabs": {
@@ -259,6 +568,7 @@
         "tab-0",
         "collection_EwMxpx"
       ],
+      "disabled": true,
       "settings": {
         "title": "brands",
         "progress_bar": "mobile",
@@ -315,6 +625,7 @@
         "image",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "height": "use_screen_one_half",
         "brick_gutter": 0,
@@ -365,6 +676,7 @@
         "video-0",
         "video-1"
       ],
+      "disabled": true,
       "settings": {
         "height": "use_screen_one_half",
         "brick_gutter": 0,
@@ -378,6 +690,7 @@
     },
     "collection-split-section-1": {
       "type": "collection-split",
+      "disabled": true,
       "settings": {
         "collection": "margn",
         "product_list": [
@@ -410,6 +723,7 @@
     },
     "collection-split-section-2": {
       "type": "collection-split",
+      "disabled": true,
       "settings": {
         "collection": "scarlet-sage",
         "product_list": [
@@ -516,6 +830,7 @@
     },
     "section_collection_slider_qBQUmB": {
       "type": "section-collection-slider",
+      "disabled": true,
       "settings": {
         "collection": "feature-product",
         "product_limit": 12,
@@ -672,6 +987,7 @@
         "icons-1",
         "icons-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "bg": "palette--light bg--neutral",
@@ -694,6 +1010,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -704,6 +1021,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -714,6 +1032,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -724,6 +1043,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -734,6 +1054,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -744,6 +1065,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -754,6 +1076,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -764,6 +1087,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -774,6 +1098,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -784,6 +1109,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -794,6 +1120,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -804,6 +1131,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -814,6 +1142,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -824,6 +1153,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -834,6 +1164,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -844,6 +1175,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -854,6 +1186,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -864,6 +1197,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -874,6 +1208,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -884,6 +1219,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -894,6 +1230,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -904,6 +1241,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -914,6 +1252,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -924,6 +1263,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -934,6 +1274,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -944,6 +1285,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -954,6 +1296,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -964,6 +1307,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -974,6 +1318,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -984,6 +1329,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -994,6 +1340,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -1004,6 +1351,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         },
@@ -1014,6 +1362,7 @@
             "link": "",
             "new_tab": true,
             "width": 140,
+            "width_desk": 140,
             "spacing": 50
           }
         }
@@ -1053,20 +1402,27 @@
         "logo_image_yFj6XR",
         "logo_image_qyYejw"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
+        "section_bg": "",
         "bg": "palette--dark bg--invert--accent",
         "enable_marquee": true,
         "marquee_speed": 60,
         "width": "wrapper--none",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "padding_top_mb": 36,
+        "padding_bottom_mb": 36
       }
     }
   },
   "order": [
     "section_slideshow_NxKtHn",
     "hero",
+    "count_down_NqHXka",
+    "section_logos_t9R4yA",
+    "social_media_soon_CMGyx4",
     "tabs",
     "double",
     "custom",
